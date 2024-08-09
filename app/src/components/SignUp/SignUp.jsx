@@ -86,7 +86,7 @@ const SignUp = () => {
               <button type="submit" className="create-account">Create Account</button>
             </form>
             <div className="alternate-login">
-              <p>Already have an account? <Link to="/signin">Login</Link></p>
+              <p>Already have an account? <Link to="/">Login</Link></p>
             </div>
           </div>
         </div>
