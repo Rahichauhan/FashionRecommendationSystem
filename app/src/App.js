@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './components/Login';
-import SignUp from './components/SignUp';
+import Login from './components/SignIn/Signin';
+import SignUp from './components/SignUp/SignUp.jsx';
 import Home from './components/Home';
-import Form from './components/Form';
+import Form from './components/Form/Form';
 import Contact from './components/Contact';
 
 function App() {

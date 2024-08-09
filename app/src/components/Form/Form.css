@@ -1,0 +1,98 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    width: 100%;
+    background-color:#e9d7b7;
+
+  }
+   .Main-container {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    align-items: center; 
+    background-color:#f7ebd6;
+    border:1px solid #d0a990;
+    border-radius: 10px;
+    max-width: 1000px;
+  }
+  .name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+  
+  .girl-img {
+    max-width: 900px; 
+    height: auto;
+    margin-right: 20px;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    flex: 0 0 auto; 
+    width: 400px; 
+    padding: 40px;
+   
+  }
+  .form-container label {
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .form-container input,
+  .form-container select {
+    margin-top: 5px;
+    padding: 11px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1.5px solid #f0d9af;
+    background-color:#fefaf2;
+    border-radius: 4px;
+  }
+  
+  .form-container button {
+    margin-top: 20px;
+    padding: 12px;
+    background: linear-gradient(90deg,#845131, #9a7555, #a57455); /* Gradient background */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-container button:hover {
+    background: linear-gradient(90deg,#845131, #9a7555, #a57455); /* Gradient background */
+  }
+  /* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .Main-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        padding: 20px;
+    }
+
+    .girl-img {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 20px; /* Add margin below the image */
+    }
+
+    .form-container {
+        width: 100%; /* Full width on smaller screens */
+        padding: 20px; /* Reduced padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container input,
+    .form-container select,
+    .form-container button {
+        padding: 10px;
+        font-size: 14px; /* Adjust font size on very small screens */
+    }
+
+    .name {
+        font-size: 18px; /* Slightly smaller title on very small screens */
+    }
+}
