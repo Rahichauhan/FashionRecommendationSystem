@@ -1,0 +1,24 @@
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1200px; 
+}
+
+.scroll-wrapper {
+  display: flex;
+}
+.scroll-image {
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: 30px;
+  border-radius: 20px;
+}
