@@ -65,8 +65,8 @@ app.post("/form", async (req, res) => {
     timestamp,
   } = req.body;
 
-  const validSpiritAnimals = ["Lion", "Eagle", "Wolf", "Bear", "Other"];
-  const validBodyTypes = ["Slim", "Athletic", "Curvy"];
+  const validSpiritAnimals = ["Cat", "Lion", "Eagle", "Bear", "Butterfly"];
+  const validBodyTypes = ["Slim", "Average", "Curvy"];
   const validTimestamps = ["Day", "Night"];
 
   if (!validSpiritAnimals.includes(spiritanimal)) {
