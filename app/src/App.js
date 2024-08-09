@@ -21,7 +21,6 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/infiniteanimation" element={<InfiniteSlider/>}/>
           <Route path="/footer" element={<Footer/>}/>
-
         </Routes>
       </Router>
     </div>
