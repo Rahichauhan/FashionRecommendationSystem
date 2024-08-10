@@ -8,10 +8,11 @@ import girl from '../../assets/image_prev_ui (5).png'
 const Form = () => {
     const navigate = useNavigate();
     const [email, setEmail] = useState("");
-    const [spiritAnimal, setSpiritAnimal] = useState("");
+    const [spiritanimal, setSpiritAnimal] = useState("");
     const [age, setAge] = useState("");
     const [height, setHeight] = useState("");
     const [bodyType, setBodyType] = useState(""); 
+    const [weather, setWeather] = useState(""); 
     const [occasion, setOccasion] = useState("");
     const [timestamp, setTimestamp] = useState(""); 
 
@@ -20,10 +21,11 @@ const Form = () => {
         try {
             const response = await axios.post("http://localhost:3000/form", {
                 email,
-                spiritAnimal,
+                spiritanimal,
                 age,
                 height,
                 bodyType,
+                weather,
                 occasion,
                 timestamp
             });
@@ -56,26 +58,32 @@ const Form = () => {
                             Spirit Animal:
                             <select 
                                 name="spiritAnimal" 
-                                value={spiritAnimal} 
+                                value={spiritanimal} 
                                 onChange={(e) => setSpiritAnimal(e.target.value)} 
                                 required
                             >
                                 <option value="">Select an animal</option>
+                                <option value="cat">Cat</option>
                                 <option value="lion">Lion</option>
                                 <option value="eagle">Eagle</option>
-                                <option value="dolphin">Dolphin</option>
-                                <option value="wolf">Wolf</option>
+                                <option value="bear">Bear</option>
+                                <option value="butterfly">Butterfly</option>
                             </select>
                         </label>
                         <label>
                             Age:
-                            <input 
+                            <select 
                                 type="number" 
                                 name="age" 
                                 value={age} 
                                 onChange={(e) => setAge(e.target.value)} 
                                 required 
-                            />
+                            >
+                                 <option value="">Select age</option>
+                                <option value="ectomorph">15-22</option>
+                                <option value="mesomorph">23-30</option>
+                                <option value="endomorph">31-40</option>
+                                </select>
                         </label>
                         <label>
                             Height:
@@ -99,6 +107,20 @@ const Form = () => {
                                 <option value="ectomorph">Slim</option>
                                 <option value="mesomorph">Average</option>
                                 <option value="endomorph">Curvy</option>
+                            </select>
+                        </label>
+                        <label>
+                            Weather:
+                            <select 
+                                name="weather" 
+                                value={weather} 
+                                onChange={(e) => setWeather(e.target.value)} 
+                                required
+                            >
+                                <option value="">Select weather</option>
+                                <option value="ectomorph">Summer</option>
+                                <option value="mesomorph">Winter</option>
+                                <option value="endomorph">Rainy</option>
                             </select>
                         </label>
                         <label>

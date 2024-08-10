@@ -61,7 +61,7 @@ app.post("/form", async (req, res) => {
     height,
     bodyType,
     weather,
-    occassion,
+    occasion,
     timestamp,
   } = req.body;
 
@@ -94,7 +94,7 @@ app.post("/form", async (req, res) => {
       height,
       bodyType,
       weather,
-      occassion,
+      occasion,
       timestamp,
     });
 
