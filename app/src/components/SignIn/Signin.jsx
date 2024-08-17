@@ -60,10 +60,10 @@ const Login = () => {
                   required 
                 />
               </div>
-              <button type="submit" className="create-account">Login</button>
+              <button type="submit" className="create-account2">Login</button>
             </form>
-            <div className="alternate-login">
-              <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+            <div className="alternate-login2">
+              <p>Don't have an account? <Link to="/signup"><span className='signup1' >Sign Up </span></Link></p>
             </div>
           </div>
         </div>

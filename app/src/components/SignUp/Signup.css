@@ -85,7 +85,7 @@
     display: block;
     width: 100%;
     padding: 10px;
-    background: linear-gradient(90deg,#845131, #9a7555, #a57455); /* Gradient background */
+    background: linear-gradient(90deg,#845131, rgb(154, 117, 85), #a57455); /* Gradient background */
     color: white;
     border: none;
     border-radius: 5px;
@@ -101,49 +101,13 @@
   .alternate-login p {
     margin-bottom: 10px;
   }
-  
-  .or-divider {
-    position: relative;
-    text-align: center;
-    margin: 20px 0;
+  .login1{
+    color: #9b6340;
   }
-  
-  .or-divider span {
-    background-color: #f5f1ec;
-    padding: 0 10px;
-    position: relative;
-    z-index: 1;
+  .signup1{
+    color: #9b6340;
   }
-  
-  .or-divider::before {
-    content: '';
-    display: block;
-    border-top: 1px solid #ccc;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    z-index: 0;
-  }
-  
-  .social-login {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .google {
-    background-color: white;
-  }
-  
-  .facebook {
-    background-color: white;
-  }
-  
+ 
   .sign-img2{
     max-width: 200px;
     height: auto;
@@ -174,7 +138,7 @@
   .signup-form2 {
     padding: 40px 100px;
     width: 100%;
-    max-width: 400px;
+    max-width: 600px;
     border-top-left-radius: 25px; /* Added border-radius for form */
   border-bottom-left-radius: 25px; /* Added border-radius for form */
   }
@@ -270,4 +234,24 @@
     .signup-form h2 {
         font-size: 20px; /* Slightly reduce heading size */
     }
+}
+.create-account2 {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg,#845131, #9a7555, #a57455); /* Gradient background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.alternate-login2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.alternate-login2 p {
+  margin-bottom: 10px;
 }

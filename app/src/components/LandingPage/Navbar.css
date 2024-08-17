@@ -1,0 +1,154 @@
+
+.container {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 1rem;
+  background: linear-gradient(to bottom, #f5e6c8, #e6d0a4);
+  border-bottom: 1px solid #eaeaea;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  height: 75px;
+}
+.logo {
+  flex: 2; 
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap; 
+  margin-top: 30rem;
+}
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 230px;
+  /* left: 10px; */
+}
+
+.navMain {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* height: 80px; */
+  justify-content: space-between;
+  position: relative;
+}
+
+
+.logo1 {
+  flex: 1;
+  position: relative;
+  /* left: 0.2rem; */
+  top: 0.1rem;
+  margin-bottom: 10px;
+}
+
+  .logoImg{
+    width: 7rem;
+    height: 7rem;
+  }
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: #fff;
+  padding: 1rem 0.2rem;
+  width: 100%;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.04rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c2b280;
+  transform: scale(1.1);
+}
+.icon {
+  flex: 1;
+  font-size: 2rem;
+  position: relative;
+  right: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.front-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Adjust the opacity to control the darkness */z-index: 0;
+}
+
+.cta-button {
+  padding: 0.5rem 2rem;
+  background-color: #a89269;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 10;
+  position: relative;
+  top: 22vh; /* Adjust this value as needed */
+}
+
+.cta-button:hover {
+  background-color: #877554;
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
