@@ -19,7 +19,7 @@ const SignUp = () => {
       return;
     }
     try {
-      await axios.post("http://localhost:3000/signup", {
+      await axios.post(`${import.meta.env.BACKEND_URL}/signup`, {
         firstname,
         lastname,
         email,

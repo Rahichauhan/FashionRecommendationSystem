@@ -13,7 +13,7 @@ const Login = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/", {
+      const response = await axios.post(`${import.meta.env.BACKEND_URL}/`, {
         email,
         password
       });

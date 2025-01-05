@@ -20,7 +20,7 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/form",
+        `${import.meta.env.BACKEND_URL}/form`,
         {
           email,
           spiritanimal,
