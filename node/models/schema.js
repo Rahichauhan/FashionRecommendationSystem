@@ -2,29 +2,22 @@ const mongoose = require('mongoose');
 
 // Define form schema as a subdocument
 const formSchema = new mongoose.Schema({
+
     spiritanimal: {
         type: String,
         required: true,
-        enum: ['Lion', 'Eagle', 'Wolf', 'Bear', 'Other']
+        enum: ["Cat", "Lion", "Eagle", "Bear", "Butterfly"]
     },
     age: {
         type: String,
-        required: true
-    },
-    height: {
-        type: String,
-        required: true
-    },
-    bodyType: {
-        type: String,
         required: true,
-        enum: ['Slim', 'Athletic', 'Curvy']
+    },
+
+    occasion: {
+        type: String,
+        required: true
     },
     weather: {
-        type: String,
-        required: true
-    },
-    occassion: {
         type: String,
         required: true
     },
@@ -32,7 +25,12 @@ const formSchema = new mongoose.Schema({
         type: String,
         required: true,
         enum: ['Day', 'Night']
-    }
+    },
+    bodyType: {
+        type: String,
+        required: true,
+        enum: ['Slim', 'Regular', 'Curvy']
+    },
 });
 
 // Define user schema

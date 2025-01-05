@@ -11,17 +11,18 @@ import About from './components/About/about.js';
 import Works from './components/Works/works.js';
 import Navbar from './components/LandingPage/Navbar.jsx';
 import ContactUs from './components/Contact/Contact.js';
+import Outfit from "./components/Outfit/outfit.jsx"
 
 function App() {
   return (
     <div>
-     <Home/>
     <Router>
         <Routes>
-          <Route path='/l' element= {<Navbar/>}/>
+          <Route path='/' element= {<SignUp/>}/>
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp/>}/>
           <Route path="/home" element={<Home/>}/>
+          <Route path="/outfit" element={<Outfit/>}/>
           <Route path="/form" element={<Form/>}/>
           <Route path="/contact" element={<ContactUs/>}/>
           <Route path="/infiniteanimation" element={<InfiniteSlider/>}/>

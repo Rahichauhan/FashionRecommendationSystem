@@ -4,8 +4,13 @@ import frontImage from '../../assets/frontimage.jpg';
 import logoImg from '../../assets/Logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+  const navigate=useNavigate();
+  const handleButtonClick=()=>{
+    navigate("/form")
+  }
   return (
     <div className="container">
       <nav className="navbar">
@@ -31,7 +36,7 @@ const Navbar = () => {
       </nav>
       <div className="main-content">
         <img src={frontImage} alt="Front" className="front-image"/>
-        <button className="cta-button">Come on in</button>
+        <button onClick={handleButtonClick} className="cta-button">Come on in</button>
       </div>
      
     </div>
